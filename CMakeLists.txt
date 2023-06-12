@@ -104,7 +104,6 @@ FIND_PACKAGE(Boost COMPONENTS program_options REQUIRED)
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES ekobot_utils
   CATKIN_DEPENDS roscpp rosbag pcl_conversions tf_conversions
   DEPENDS PCL
 )
@@ -121,10 +120,6 @@ include_directories(
 
 )
 
-## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/ekobot_utils.cpp
-# )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -198,11 +193,7 @@ include_directories(
 ## Testing ##
 #############
 
-## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_ekobot_utils.cpp)
-# if(TARGET ${PROJECT_NAME}-test)
-#   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
-# endif()
+
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
